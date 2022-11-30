@@ -1,0 +1,15 @@
+{
+  "name": "adventofcode",
+  "version": "0.0.1",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Reed Lauber",
+  "license": "BSD",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
