@@ -1,15 +1,21 @@
 const sampleData = require('./data-sample');
 const realData = require('./data');
-const { getLines } = require('./utils');
+const { getLines, getMostCalories, getSortedElves } = require('./utils');
 
 const step1 = (data) => {
   const lines = getLines(data);
-  return 'step 1';
+  const max = getMostCalories(lines);
+  return `${max}`;
 };
 
 const step2 = (data) => {
   const lines = getLines(data);
-  return 'step 2';
+  const elves = getSortedElves(lines);
+  let sum = 0;
+  for (let i = 0; i < 3; i++) {
+    sum += elves[i].sum;
+  }
+  return `${sum}`;
 };
 
 const getOutput = (step, useSample) => {
